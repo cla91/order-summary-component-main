@@ -1,0 +1,129 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+.container {
+  background: url("../images/pattern-background-mobile.svg") no-repeat top center;
+  background-color: hsl(225, 100%, 94%);
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.footer {
+  margin-bottom: 10px;
+}
+.card {
+  max-width: 450px;
+  margin: 0 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+  line-height: 1.6;
+}
+.card > img {
+  display: block;
+  width: 100%;
+}
+.content {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 1.5rem;
+  width: 85%;
+  margin: 2rem auto;
+  max-width: 354px;
+}
+.card h1 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.pay-plan {
+  background-color: hsl(225, 100%, 98%);
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pay-plan h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+.pay-plan a:link, .pay-plan a:visited {
+  color: hsl(245, 75%, 52%);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+.pay-plan a:hover, .pay-plan a:active {
+  text-decoration: none;
+  color: hsl(245, 65%, 62%);
+}
+.send-order:link, .send-order:visited {
+  display: block;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  -webkit-box-shadow: 0px 10px 20px hsl(224, 23%, 75%);
+          box-shadow: 0px 10px 20px hsl(224, 23%, 75%);
+}
+.send-order:hover, .send-order:active {
+  background-color: hsl(245, 65%, 62%);
+}
+.cancel-order:link, .cancel-order:visited {
+  display: block;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.cancel-order:hover, .cancel-order:active {
+  color: hsl(223, 47%, 23%);
+}
+@media only screen and (min-width: 376px) {
+  .container {
+    background: url("../images/pattern-background-desktop.svg") no-repeat top center;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+  }
+}
+@media only screen and (min-width: 515px) {
+  .content {
+  margin: 3rem auto;
+}
+}
