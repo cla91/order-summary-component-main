@@ -126,4 +126,7 @@ body {
   .content {
   margin: 3rem auto;
 }
+  .card h1 {
+  font-size: 1.8rem;
+}
 }
